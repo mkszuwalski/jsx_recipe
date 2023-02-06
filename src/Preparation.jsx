@@ -1,5 +1,6 @@
 import React from "react";
 import Bolder from "./Bolder";
+import Sentencer from "./Sentencer";
 
 function Preparation() {
     const copyright = "©Copyright 1973 by The McCall Publishing Co. All rights reserved. Printed in U.S.A.";
@@ -26,8 +27,9 @@ function Preparation() {
             instruction: `To unmold: Run small spatula around edge of mold; invert onto serving plate. Place hot dishcloth over mold; shake gently to release. Repeat, if necessary. Lift off mold. refrigerate until ready to serve.`,
         }
     ]
+
     const preparationList = preparation.map(step =>
-        <li key={step.instruction} className="preparation">{Bolder(step.instruction)}</li>);
+        <li key={step.instruction} className="preparation">{Bolder(Sentencer(step.instruction))}</li>);
     return (
         <div>
             <h2>
@@ -43,5 +45,4 @@ function Preparation() {
         </div>
     );
 }
-
 export default Preparation

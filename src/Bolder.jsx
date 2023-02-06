@@ -5,6 +5,7 @@ const Bolder = (str) => {
     const wordsToBold = [
         'gelatin', 'sugar', 'salt', 'apple juice', 'lemon juice', 'vinegar', 'carrot', 'celery', 'cabbage', 'green pepper', 'pimiento', 'water'
     ];
+    if (str === null) return "";
     if (str.length > 3) {
         boldedText = str;
     } else {
