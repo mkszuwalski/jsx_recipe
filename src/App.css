@@ -1,13 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #eee url("https://www.transparenttextures.com/patterns/cubes.png");
+    padding: 0 16px;
+}
+
 .container {
-  width: 100hw;
-  display: grid;
-  justify-content: center;
+    padding: 0;
+    margin: 0;
+    overflow-y: inherit;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
 }
 
 .item {
-  width: 750px;
+    color: blue;
+    width: 750px;
 }
 
 ol {
-    padding: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-block-end: 0;
+}
+
+ul {
+    padding: 1rem;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+.presentation {
+    height: 100%;
+    width: 40%;
+    margin: 1rem 0 2rem 0;
+    padding-bottom: 2rem;
+    overflow: visible;
+}
+
+.serving {
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 2rem;
+}
+
+.copyright {
+    font-family: Monospaced, monospace;
+    font-size: small;
+    color: aquamarine;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    color: darkkhaki;
 }
